@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Agustin Vallejo</title>
+    <style>
+
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="headerC">
+    
+        <div class="containery" >
+            <div class="logo1">
+                <img src="Images/AV.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Agustín Vallejo</span>
+            </div>
+            <nav>
+                <a href="#About Me">About Me</a>
+                <a href="#My Projects">My Proyects</a>
+                <a href="#Contact" >Contact</a>
+                <a href="https://linkedin.com/in/tu_usuario" target="_blank">LinkedIn</a>
+            </nav>
+        </div>
+    </header>
+    
+
+    <div class="anchor" id="About Me"></div>
+<div class="container">
+
+
+    <div class="separation-box">
+
+    </div>
+
+        <div class="centered-box" >
+            
+         
+            <h1 class=" modifyh1" >About Me</h1>
+          
+            <p>Welcome to my portfolio! I'm Agustin Vallejo, a game programmer and designer from Argentina. I have played games since I was a child, and some of them inspired me a lot. I want to help in the development of exciting experiences that could be as influential as the games I played in my childhood and even today.</p>
+            <p>I started my journey as a game developer back in 2021 when I entered the video game development program at Da Vinci School in Buenos Aires. I have worked on many individual and team projects, each of them helping me improve my skills in Unity Engine, Unreal Engine, and even art programs such as Autodesk Maya and Substance Painter. Additionally, I took extra courses to broaden my programming knowledge.</p>
+            <p>Currently, I am working on Astrobotanic, an isometric 3D dungeon crawler. My team and I started working on this project in Q1 2024, and we already have a playable demo that very well reflects the original idea we had.</p>
+        </div>
+
+
+
+        <div class="separation-box2">
+
+        </div>
+        <div class="anchor" id="My Projects"></div>
+    <div class="centered-box">
+        <h1 class=" modifyh1">My Projects</h1>
+    
+        <br><br><br>
+            <iframe width="1000" height="550" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+
+
+</div>
+
+<div class="centered-box">
+    <H1 class="modifyh1-2"> Main Proyects </H1>
+</div>
+
+<div class="imagesGrid">
+    <div class="imagesBox">
+
+        <img src="Images/Ashes.jpeg" class="imagesG">
+
+        <p class="modifyp">Ashes of Eric Rivel is a first-person horror game that takes place in a sinister Victorian university. The player must explore the constantly changing building and solve puzzles to uncover more information about the death of the former art teacher, Eric Rivel.</p>
+
+        <a href="http://example.com" class="link-bottom-right">Download demo</a>
+    </div>
+
+    <div class="imagesBox">
+
+        <img src="Images/AstroB.jpeg" class="imagesG">
+
+        <p class="modifyp">Astrobotanic is an isometric 3D dungeon crawler where the player must progress through different levels by controlling the plants that have taken over the spaceship and the protagonist's own body. They will use these plants to fight against invading plant-based monsters and solve puzzles.</p>
+
+        <a href="http://example.com" class="link-bottom-right">Download demo</a>
+    </div>
+
+</div>
+<div class="centered-box">
+    <H1 class="modifyh1-2"> Side Proyects </H1>
+</div>
+
+<div class="imagesGrid">
+
+    <div class="imagesBox">
+
+        <img src="Images/Orbital.jpeg" class="imagesG">
+
+        <p class="modifyp">Short mobile demo where I use some mobile inputs like swipe, accelerometer, etc.</p>
+
+        <a href="http://example.com" class="link-bottom-right">Download demo</a>
+    </div>
+
+    <div class="imagesBox">
+
+        <img src="Images/Conurbano.jpeg" class="imagesG">
+
+        <p class="modifyp">A short multiplayer car game demo using Unity Photon Fusion.</p>
+
+        <a href="http://example.com" class="link-bottom-right">Download demo</a>
+    </div>
+</div>
+
+<div class = "container">
+
+    <div class="separation-box2">
+
+    </div>
+</div>
+
+</div>
+
+<div class="anchor" id="Contact"></div>
+<div class="contact-form-container">
+    <h2>Contact</h2>
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e849ce20-8839-461f-ab8e-f30b1efe63a1">
+        <label for="nombre">Name:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Message:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="response-message" style="display: none;"></div>
+</div>
+
+
+<footer>
+    <div class="containery" >
+        <div class="logo1">
+            <img src="Images/AV.png" alt="Logo" class="logo-img2">
+           
+        </div>
+
+    </div>
+</footer>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita el comportamiento de envío del formulario por defecto
+
+        var formData = new FormData(this);
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            var responseMessage = document.getElementById('response-message');
+            if (data.success) {
+                responseMessage.textContent = 'El mensaje se ha enviado correctamente.';
+                responseMessage.className = ''; // Elimina cualquier clase de error
+                responseMessage.classList.add('success'); // Añade clase de éxito
+                responseMessage.style.display = 'block'; // Muestra el mensaje
+
+                // Oculta el mensaje después de 5 segundos
+                setTimeout(() => {
+                    responseMessage.style.display = 'none';
+                }, 3000);
+
+                this.reset(); // Vacía el formulario
+            } else {
+                responseMessage.textContent = 'Hubo un error al enviar el mensaje.';
+                responseMessage.className = 'error'; // Añade clase de error
+                responseMessage.style.display = 'block'; // Muestra el mensaje
+
+                // Oculta el mensaje después de 5 segundos
+                setTimeout(() => {
+                    responseMessage.style.display = 'none';
+                }, 3000);
+            }
+        })
+        .catch(error => {
+            var responseMessage = document.getElementById('response-message');
+            responseMessage.textContent = 'Hubo un error al enviar el mensaje.';
+            responseMessage.className = 'error'; // Añade clase de error
+            responseMessage.style.display = 'block'; // Muestra el mensaje
+
+            // Oculta el mensaje después de 5 segundos
+            setTimeout(() => {
+                responseMessage.style.display = 'none';
+            }, 5000);
+        });
+    });
+</script>
+</body>
+</html>

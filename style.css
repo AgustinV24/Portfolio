@@ -1,0 +1,328 @@
+body {
+    display:grid;
+    justify-content: center;
+    align-items: flex-start; /* Alinear al inicio para evitar solapamiento */
+    height: 100vh;
+    margin: 0;
+    font-family: "Monserrat";
+    background: #c4c4c9 ; 
+
+}
+
+.container {
+    display: flex;
+    position: static;
+    top: 125px;
+    left: 50px;
+    
+    flex-direction: column; /* Apilar las cajas verticalmente */
+    align-items: center; /* Centrar las cajas horizontalmente */
+}
+
+.centered-box {
+
+    padding: 20px;
+    margin: 10px; /* Añadir margen entre cajas */
+
+    width: 1000px;
+    text-align: justify;
+
+   
+
+}
+.lefty-box {
+    background-color: #1c1c20;
+    padding: 20px;
+    margin: 10px; /* Añadir margen entre cajas */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    clip-path: ellipse(50% 70% at 50% 50%);
+ 
+
+}
+.lefty-box2 {
+    background-color: #1c1c20;
+    padding: 20px;
+    margin: 10px; /* Añadir margen entre cajas */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    border-radius: 8px;
+    clip-path: ellipse(50% 70% at 50% 50%);
+    filter: blur(5%);
+ 
+
+}
+
+.modifyh1 {
+margin: 0;
+color: #000000;
+}
+.modifyh1-2 {
+    color: #000000;
+    margin-left: 50px;
+    }
+.large-heading {
+    font-size: 2rem; /* Tamaño grande en rems */
+    color: #ccc;
+    margin: 20px 0; /* Margen superior e inferior */
+    
+}
+@font-face {
+    font-family: "Monserrat";
+    src: url(Fonts/Montserrat-Light.ttf);
+
+}
+.headerC{
+    font-family: "Monserrat";
+}
+.left-box {
+
+
+    margin-left: 40px;
+
+    max-width: 700px;
+
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+}
+.title-box {
+    background-color: #06031a;
+    width: 99vw; /* Ocupa todo el ancho de la ventana de visualización */
+    height: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra las cajas verticalmente */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1vw; /* Ajusta el espaciado interno si es necesario */
+}
+
+.imagesGrid {
+    display: flex;
+    flex-wrap: wrap;
+margin-left: 50px;
+margin-bottom: 30px;
+}
+
+.imagesBox {
+    margin: 20px;
+    text-align: justify;
+    display: flex;
+    max-width: 830px;
+    border-width: 5px;
+    border-color: #000000;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.imagesG {
+    max-width: 450px;
+    margin: 20px;
+}
+
+.link-bottom-right {
+    align-self: flex-end;
+    position: absolute;
+    text-decoration: none;
+    bottom: 20px; /* Ajusta el espacio desde el borde inferior */
+    right: 20px; 
+    margin-top: auto; 
+    color: blue;
+}
+
+.modifyp{
+    margin-right: 30px;
+
+}
+.anchor {
+    display: block;
+    height: 80px; /* altura igual a la altura de tu barra fija */
+    margin-top: -80px; /* misma altura pero negativa */
+    visibility: hidden; /* ocultar el ancla */
+}
+
+.separation-box {
+
+    background-image: url("Images/CodingImage.jpg");
+
+    width: 99.1vw; /* Ocupa todo el ancho de la ventana de visualización */
+    height: 6vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centrar las cajas horizontalmente */
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.separation-box2 {
+
+    background-image: url("Images/CodingImage.jpg");
+
+    width: 60vw; /* Ocupa todo el ancho de la ventana de visualización */
+    height: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centrar las cajas horizontalmente */
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.centered-box p {
+    font-size: 27px; /* Ajusta el tamaño de la letra aquí */
+}
+
+header {
+    background-color: #07061f; /* Color sólido para la barra */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.containery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+.logo-img2 {
+    height: 100px;
+    margin-right: 10px;
+}
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Añadir margen superior para el contenido que sigue el header */
+body::before {
+    content: "";
+    display: block;
+    height: 60px; /* Ajusta esto según la altura de tu barra */
+}
+
+.contact-form-container {
+  
+    padding: 20px;
+    border-color: #000000;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+    width: 850px;
+    margin-left: 26vw;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+textarea{
+    width: 200px;
+    height: 100px;
+    resize: none;
+ 
+}
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+    text-align: justify;
+}
+
+.contact-form-container label {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contact-form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    background-color:#05071a !important;
+}
+#response-message {
+    margin-top: 10px; /* Espacio arriba del mensaje */
+    padding: 10px; /* Espacio interno del mensaje */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+    background-color: #28a745; /* Color de fondo verde para éxito */
+    border: 1px solid #218838; /* Borde verde oscuro para éxito */
+    text-align: center; /* Centra el texto */
+    display: none; /* Oculta el mensaje por defecto */
+}
+
+/* Estilo para mensajes de error */
+#response-message.error {
+    background-color: #dc3545; /* Color de fondo rojo para error */
+    border: 1px solid #c82333; /* Borde rojo oscuro para error */
+}
+
+footer{
+    background-color: #05071a;
+    height: 150px; /* Altura fija del footer */
+    text-align: center; /* Centra el texto */
+    border-top: 1px solid #ccc; /* Borde superior */
+    margin-top: 20px; /* Espacio superior */
+    display: flex; /* Usa Flexbox para centrar el contenido verticalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
