@@ -76,6 +76,7 @@ color: #000000;
     src: url(Fonts/Montserrat-Light.ttf);
 
 }
+
 .headerC{
     font-family: "Monserrat";
 }
@@ -196,7 +197,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    color: #ccc;
     margin: 0 auto;
     padding: 0 20px;
 }
