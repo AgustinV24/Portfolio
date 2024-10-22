@@ -327,3 +327,86 @@ footer{
     align-items: center; /* Centra el contenido verticalmente */
     justify-content: center; /* Centra el contenido horizontalmente */
 }
+
+@media (max-width: 768px) {
+
+    /* Ajustamos el ancho del contenedor */
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Aseguramos que las imágenes se adapten bien al ancho */
+    .imagesGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagesBox {
+        max-width: 100%; /* Ocupa todo el ancho en móviles */
+        margin-bottom: 20px; /* Espacio entre cajas */
+    }
+
+    .imagesG {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Alineamos el logo y el menú de navegación */
+    .headerC {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo1 {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    /* Ajustamos los títulos */
+    .modifyh1, .modifyh1-2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* Para pantallas muy pequeñas (480px o menos, móviles pequeños) */
+@media (max-width: 480px) {
+
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .headerC {
+        padding: 10px;
+    }
+
+    .logo-img {
+        max-width: 50px; /* Hacemos el logo más pequeño en móviles pequeños */
+    }
+
+    .modifyh1 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .imagesBox {
+        padding: 5px;
+    }
+}
